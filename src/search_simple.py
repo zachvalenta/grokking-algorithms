@@ -1,9 +1,14 @@
 """
 runtime: O(n)
+page 5
 """
 
 
 num_that_ur_trying_to_guess = 42
+
+
+def something():
+	return 'something'
 
 
 def simple_search():

@@ -1,3 +1,8 @@
+"""
+page 33
+
+"""
+
 # Python question
 # https://www.tutorialspoint.com/python/dictionary_values.htm
 # values() should return type list but instead type dict_values; why?
@@ -8,6 +13,7 @@ print("list: ", type(sample_dict.values()))
 
 # dummy dict; think solution is written to work on data passed dynamically
 my_dict = {'band1': 47, 'band2': 14, 'band3': 50}
+
 
 def sort_dict_by_value(dict):
 
