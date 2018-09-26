@@ -1,27 +1,17 @@
 """
+source: Grokking Algorithms [pg. k5]
 runtime: O(n)
-page 5
 """
 
-
-num_that_ur_trying_to_guess = 42
-
-
-def something():
-	return 'something'
+import random
 
 
 def simple_search():
 
-	num_uv_already_guessed = []
+	number_to_guess = random.randint(1, 100)
+	accumulated_guesses = 0
 
-	for index in range(100):
-		if index == num_that_ur_trying_to_guess:
-			break
-		else:
-			num_uv_already_guessed.append(index)
-
-	print(num_uv_already_guessed)
-
-
-simple_search()
+	for i in range(101):
+		accumulated_guesses = accumulated_guesses + 1
+		if i == number_to_guess:
+			return accumulated_guesses

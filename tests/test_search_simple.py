@@ -3,10 +3,10 @@ import unittest
 import src.search_simple as simple
 
 
-class TestSearchSimple(unittest.TestCase):
+class TestSearch(unittest.TestCase):
 
-	def test_sanity(self):
-		self.assertEqual(True, True)
+	def test_simple(self):
+		self.assertGreaterEqual(100, simple.simple_search())
 
-	def test_something(self):
-		self.assertEqual('something', simple.something())
+	def test_binary(self):
+		pass
