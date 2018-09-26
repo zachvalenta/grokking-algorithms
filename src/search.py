@@ -6,7 +6,7 @@ runtime: O(n)
 import random
 
 
-def simple_search():
+def simple():
 
 	number_to_guess = random.randint(1, 100)
 	accumulated_guesses = 0
