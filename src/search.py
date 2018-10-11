@@ -21,6 +21,7 @@ def binary(user_search, sorted_list):
 	* runtime: O(log n)
 	* sketch: 3 placeholders (low, mid, high) in a list;
 	keep guessing the mid and reset low/high as necessary
+	* only works for ordered list
 	"""
 	low_index = 0
 	high_index = len(sorted_list) - 1
