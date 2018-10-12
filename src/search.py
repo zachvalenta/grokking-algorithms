@@ -6,10 +6,10 @@ def simple():
 	* source: Grokking Algorithms [pg. 5]
 	* runtime: O(n)
 	"""
-	number_to_guess = random.randint(1, 100)
+	number_to_guess = random.randint(0, 99)
 	accumulated_guesses = 0
 
-	for i in range(101):
+	for i in range(0, 100):
 		accumulated_guesses = accumulated_guesses + 1
 		if i == number_to_guess:
 			return accumulated_guesses
