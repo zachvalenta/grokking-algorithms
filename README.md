@@ -1,5 +1,11 @@
 # OVERVIEW
 
-This repo is a record of working through the book ['Grokking Algorithms'](https://www.manning.com/books/grokking-algorithms)
+This repo is a record of working through the book [Grokking Algorithms](https://www.manning.com/books/grokking-algorithms).
 
-The author maintains a [repo](https://github.com/egonSchiele/grokking_algorithms) of the book's examples implemented using a bunch of different languages.
+My implementations are in Python. The author maintains a [repo](https://github.com/egonSchiele/grokking_algorithms) of the book's examples implemented across many different languages.
+
+# algos
+
+* _search_: simple, binary
+* _sort_: selection
+* _recursion_: sum, factorial
