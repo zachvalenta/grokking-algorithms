@@ -3,6 +3,9 @@
 cov:test
 	coverage html
 
+lint:
+	flake8 src
+
 pipfr:
 	pip freeze > requirements.txt
 

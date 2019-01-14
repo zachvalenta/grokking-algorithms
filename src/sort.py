@@ -1,5 +1,5 @@
-# TODO: `.keys()` should fix 'dictionary changed size during iteration' https://stackoverflow.com/a/18806531/6813490
-# TODO: rf away from separate functions (handle everything w/ `sorted()`)? DefaultDict?
+# TODO: `.keys()` should fix 'dictionary change size during iteration'
+# TODO: rf into single func - DefaultDict?
 
 
 def selection_sort(user_dict):
