@@ -3,7 +3,7 @@ import random
 
 def simple():
     """
-    * source: Grokking Algorithms [pg. 5]
+    * Grokking Algorithms pg. 5
     * runtime: O(n)
     """
     number_to_guess = random.randint(0, 99)
@@ -17,11 +17,10 @@ def simple():
 
 def binary(user_search, sorted_list):
     """
-    * source: Grokking Algorithms [pg. 6]
+    * Grokking Algorithms pg. 6
     * runtime: O(log n)
-    * sketch: 3 placeholders (low, mid, high) in a list;
+    * sketch: ordered list, 3 placeholders (low, mid, high),
     keep guessing the mid and reset low/high as necessary
-    * only works for ordered list
     """
     low_index = 0
     high_index = len(sorted_list) - 1
