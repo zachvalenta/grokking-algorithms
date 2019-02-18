@@ -1,5 +1,9 @@
 def selection_sort(unsorted_list):
-    unsorted_list_len = len(unsorted_list)  # dont mutate list during loop
+    """
+    * pg. 32
+    * runtime 📈: O(n^2)
+    """
+    unsorted_list_len = len(unsorted_list)
     sorted_list = []
     for _ in range(unsorted_list_len):
         high = find_high_val(unsorted_list)
