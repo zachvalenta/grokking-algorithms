@@ -17,4 +17,3 @@ class TestSearch(unittest.TestCase):
         query = 42
         list_unhappy = [2, 13, 24, 35, 46, 57, 68, 79]
         self.assertEqual('could not find 42', search.binary(query, list_unhappy))
-

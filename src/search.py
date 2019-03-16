@@ -3,8 +3,8 @@ import random
 
 def simple():
     """
-    * pg. 5
-    * runtime 📈: O(n)
+    📙 pg. 5
+    📈 -> O(n)
     """
     number_to_guess = random.randint(0, 99)
     accumulated_guesses = 0
@@ -17,13 +17,13 @@ def simple():
 
 def binary(user_search, sorted_list):
     """
-    * pg. 6
-    * runtime 📈: O(log n)
-    * characteristics:
+    📙 pg. 6
+    📈 -> O(log n)
 
     - requires an ordered list
     - 3 variables to track low/middle/high index in list
     - keep guessing the middle index and reset low/high index as necessary
+    - breaks if indices in billions 🔗 https://ai.googleblog.com/2006/06/extra-extra-read-all-about-it-nearly.html
     """
     low_index = 0
     high_index = len(sorted_list) - 1
@@ -38,3 +38,4 @@ def binary(user_search, sorted_list):
             low_index = mid + 1
 
     return 'could not find {}'.format(user_search)
+
