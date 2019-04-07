@@ -1,7 +1,7 @@
 def selection_sort(unsorted_list):
     """
-    * pg. 32
-    * runtime 📈: O(n^2)
+    * 📙 32
+    * 📈 O(n^2)
     """
     unsorted_list_len = len(unsorted_list)
     sorted_list = []

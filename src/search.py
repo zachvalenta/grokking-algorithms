@@ -3,8 +3,8 @@ import random
 
 def simple():
     """
-    📙 pg. 5
-    📈 -> O(n)
+    📙 5
+    📈 O(n)
     """
     number_to_guess = random.randint(0, 99)
     accumulated_guesses = 0
@@ -17,8 +17,8 @@ def simple():
 
 def binary(user_search, sorted_list):
     """
-    📙 pg. 6
-    📈 -> O(log n)
+    📙 6
+    📈 O(log n)
 
     - requires an ordered list
     - 3 variables to track low/middle/high index in list
