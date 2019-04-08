@@ -4,9 +4,10 @@ help:
 	@echo
 	@echo "📊 CODE QUALITY"
 	@echo
+	@echo "cov:     view HTML coverage report in browser"
+	@echo "fmt:     auto format code using Black"
 	@echo "lint:    lint using flake8"
 	@echo "test:    run unit tests, view basic coverage report in terminal"
-	@echo "cov:     view HTML coverage report in browser"
 	@echo
 	@echo "📦 DEPENDENCIES"
 	@echo
@@ -17,6 +18,9 @@ help:
 
 cov:test
 	coverage html; open htmlcov/index.html
+
+fmt:
+	black src test
 
 lint:
 	flake8 src

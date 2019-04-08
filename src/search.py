@@ -32,10 +32,10 @@ def binary(user_search, sorted_list):
     while low_index <= high_index:
         mid = (high_index + low_index) // 2
         if sorted_list[mid] == user_search:
-            return 'found {}'.format(user_search)
+            return "found {}".format(user_search)
         elif sorted_list[mid] > user_search:
             high_index = mid - 1
         else:
             low_index = mid + 1
 
-    return 'could not find {}'.format(user_search)
+    return "could not find {}".format(user_search)
