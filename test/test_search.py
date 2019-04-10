@@ -15,3 +15,13 @@ def test_binary_sad():
     query = 42
     list_unhappy = [2, 13, 24, 35, 46, 57, 68, 79]
     assert search.binary(query, list_unhappy) == "could not find 42"
+
+
+def test_bfs():
+    friends = dict()
+    friends['root'] = ['amber', 'sean', 'jack']
+    friends['amber'] = ['joe']
+    friends['jack'] = ['shuja', 'garrett']
+    friends['shuja'] = ['trotsky']
+    assert search.bfs(friends, 'joe') is True
+    assert search.bfs(friends, 'alice') is False

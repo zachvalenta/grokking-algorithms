@@ -1,3 +1,4 @@
+from collections import deque
 import random
 
 
@@ -5,6 +6,7 @@ def simple():
     """
     📙 5
     📈 O(n)
+    📝 "is it this one?" all the way through
     """
     number_to_guess = random.randint(0, 99)
     accumulated_guesses = 0
@@ -19,10 +21,11 @@ def binary(user_search, sorted_list):
     """
     📙 6
     📈 O(log n)
-
+    📝
     - requires an ordered list
     - 3 variables to track low/middle/high index in list
-    - keep guessing the middle index and reset low/high index as necessary
+    - keep guessing the middle index
+    - reset low/high index as necessary to chop list in half each time
     - breaks if indices in billions
         🔗 https://ai.googleblog.com/2006/06/extra-extra-read-all-about-it-nearly.html
     """
@@ -39,3 +42,25 @@ def binary(user_search, sorted_list):
             low_index = mid + 1
 
     return "could not find {}".format(user_search)
+
+
+def bfs(graph, condition):
+    """
+    📙 110
+    📈 O(num of edges)
+    📝
+    - graph = map of lists
+    - take root K and handle each V
+    - handle = yes (exit) no (use V as K and enque its V)
+    """
+    queue = deque(graph['root'])
+    while queue:
+        current = queue.popleft()
+        if current is condition:
+            return True
+        else:
+            try:
+                queue += graph[current]
+            except KeyError:
+                pass
+    return False
