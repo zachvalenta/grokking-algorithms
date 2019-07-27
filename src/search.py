@@ -3,14 +3,8 @@ import random
 
 
 def simple():
-    """
-    📙 5
-    📈 O(n)
-    📝 "is it this one?" all the way through
-    """
     number_to_guess = random.randint(0, 99)
     accumulated_guesses = 0
-
     for i in range(0, 100):
         accumulated_guesses = accumulated_guesses + 1
         if i == number_to_guess:
@@ -21,7 +15,6 @@ def binary(user_search, sorted_list):
     """
     📙 6
     📈 O(log n)
-    📝
     - requires an ordered list
     - 3 variables to track low/middle/high index in list
     - keep guessing the middle index
@@ -48,7 +41,6 @@ def bfs(graph, condition):
     """
     📙 110
     📈 O(num of edges)
-    📝
     - graph = map of lists
     - take root K and handle each V
     - handle = yes (exit) no (use V as K and enque its V)
