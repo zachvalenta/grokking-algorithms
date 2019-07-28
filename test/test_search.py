@@ -18,10 +18,10 @@ def test_binary_sad():
 
 
 def test_bfs():
-    friends = dict()
-    friends['root'] = ['amber', 'sean', 'jack']
-    friends['amber'] = ['joe']
-    friends['jack'] = ['shuja', 'garrett']
-    friends['shuja'] = ['trotsky']
-    assert search.bfs(friends, 'joe') is True
-    assert search.bfs(friends, 'alice') is False
+    network = dict()
+    network['root'] = ['amber', 'sean', 'jack']
+    network['amber'] = ['joe']
+    network['jack'] = ['shuja', 'garrett']
+    network['shuja'] = ['trotsky']
+    assert search.bfs(network, 'trotsky') is True
+    assert search.bfs(network, 'bob') is False
